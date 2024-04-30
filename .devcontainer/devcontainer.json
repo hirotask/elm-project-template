@@ -1,0 +1,25 @@
+{
+    "name": "Elm (Community)",
+    "dockerFile": "Dockerfile",
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "Elmtooling.elm-ls-vscode"
+            ]
+        }
+    },
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // 8000 is the default port used for the `elm reactor` command
+    // "forwardPorts": [8000],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "elm make",
+    // Comment out to connect as root instead. In that case you may need to change the mounts
+    // configuration too. More info: https://aka.ms/vscode-remote/containers/non-root.
+    "remoteUser": "node",
+    "mounts": [
+        "source=vscode-devcontainer-elm-dependency-cache,target=/home/node/.elm,type=volume"
+    ]
+}
