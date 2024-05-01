@@ -24,7 +24,7 @@
     // "postCreateCommand": "elm make",
     // Comment out to connect as root instead. In that case you may need to change the mounts
     // configuration too. More info: https://aka.ms/vscode-remote/containers/non-root.
-    "remoteUser": "node",
+    // "remoteUser": "node",
     "mounts": [
         "source=vscode-devcontainer-elm-dependency-cache,target=/home/node/.elm,type=volume"
     ]
