@@ -12,7 +12,8 @@
                 "medo64.render-crlf",
                 "mhutchie.git-graph",
                 "dbaeumer.vscode-eslint",
-                "shd101wyy.markdown-preview-enhanced"
+                "shd101wyy.markdown-preview-enhanced",
+                "EditorConfig.EditorConfig"
             ],
             "settings": {
                 "editor.renderControlCharacters": true,
