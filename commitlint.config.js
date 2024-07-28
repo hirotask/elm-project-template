@@ -1,3 +1,6 @@
 module.exports = {
-	extends: ["gitmoji"]
+    extends: ["gitmoji"],
+    rule: {
+        "scope-case": [0, 'always', 'lower-case']
+    }
 }
